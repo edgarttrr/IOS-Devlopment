@@ -1,24 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i8X-Cz-i64">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Item 2-->
+        <scene sceneID="ZZu-G3-rOr">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="tXb-o6-1wy" customClass="CustomPickerViewController" customModule="Slot_Machine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TKT-jb-aJh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slot Machine 2.0.png" translatesAutoresizingMaskIntoConstraints="NO" id="pp8-SC-AWO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zml-h9-9do">
+                                <rect key="frame" x="9" y="189" width="259" height="131"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tXb-o6-1wy" id="bw1-5j-NVv"/>
+                                    <outlet property="delegate" destination="tXb-o6-1wy" id="lCM-1q-O08"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI9-zf-jFZ">
+                                <rect key="frame" x="42" y="412" width="202" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="43Q-Og-Pq9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.24633189833798108" blue="0.24655934919412781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="0.15351612680269588" blue="0.19224307540592167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UC9-wu-6cR">
+                                <rect key="frame" x="276" y="172" width="44" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="QHj-iW-7jy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <state key="normal" title="PushMe" backgroundImage="RedButton (1)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="1" green="0.141384648" blue="0.2111723106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="spinWithSender:" destination="tXb-o6-1wy" eventType="touchUpInside" id="Hml-ta-Ij0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MA-Gl-F2d">
+                                <rect key="frame" x="185" y="478" width="126" height="46"/>
+                                <state key="normal" title="Add More Money!!" backgroundImage="whiteButton">
+                                    <color key="titleColor" red="0.0071779822335025223" green="0.0010148564913700765" blue="0.0015157910939362438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AddingMoney:" destination="tXb-o6-1wy" eventType="touchUpInside" id="GbM-WX-L3l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current $" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNv-U9-vM6">
+                                <rect key="frame" x="9" y="471" width="87" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="Ina-VO-hEh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7j-Aq-Cbn">
+                                <rect key="frame" x="95" y="471" width="57" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="ECI-mq-ga8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.12236671630034293" green="0.95893480329949243" blue="0.2208315929274941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C7j-Aq-Cbn" firstAttribute="bottom" secondItem="cNv-U9-vM6" secondAttribute="bottom" id="63R-1m-Y4G"/>
+                            <constraint firstAttribute="trailing" secondItem="pp8-SC-AWO" secondAttribute="trailing" id="7gc-Yq-Aj6"/>
+                            <constraint firstItem="iYw-Dz-mun" firstAttribute="trailing" secondItem="9MA-Gl-F2d" secondAttribute="trailing" constant="9" id="F7E-yL-EvI"/>
+                            <constraint firstItem="pp8-SC-AWO" firstAttribute="trailing" secondItem="UC9-wu-6cR" secondAttribute="trailing" id="J3o-Qg-Vwi"/>
+                            <constraint firstItem="pp8-SC-AWO" firstAttribute="top" secondItem="TKT-jb-aJh" secondAttribute="top" id="Jq4-Cs-keb"/>
+                            <constraint firstItem="C7j-Aq-Cbn" firstAttribute="top" secondItem="fI9-zf-jFZ" secondAttribute="bottom" constant="17" id="KMB-5G-43s"/>
+                            <constraint firstItem="pp8-SC-AWO" firstAttribute="leading" secondItem="TKT-jb-aJh" secondAttribute="leading" id="RaN-8d-0Dx"/>
+                            <constraint firstItem="fI9-zf-jFZ" firstAttribute="leading" secondItem="iYw-Dz-mun" secondAttribute="leading" constant="42" id="UQd-96-w6B"/>
+                            <constraint firstItem="9MA-Gl-F2d" firstAttribute="top" secondItem="fI9-zf-jFZ" secondAttribute="bottom" constant="24" id="YNp-FU-lAR"/>
+                            <constraint firstItem="C7j-Aq-Cbn" firstAttribute="leading" secondItem="iYw-Dz-mun" secondAttribute="leading" constant="95" id="Zp9-jK-gRD"/>
+                            <constraint firstItem="iYw-Dz-mun" firstAttribute="trailing" secondItem="fI9-zf-jFZ" secondAttribute="trailing" constant="76" id="dWH-WY-edz"/>
+                            <constraint firstItem="C7j-Aq-Cbn" firstAttribute="bottom" secondItem="pp8-SC-AWO" secondAttribute="bottom" id="gSF-li-UMa"/>
+                            <constraint firstItem="UC9-wu-6cR" firstAttribute="leading" secondItem="zml-h9-9do" secondAttribute="trailing" constant="8" symbolic="YES" id="hX1-3h-UGo"/>
+                            <constraint firstItem="cNv-U9-vM6" firstAttribute="leading" secondItem="zml-h9-9do" secondAttribute="leading" id="hud-AQ-tR7"/>
+                            <constraint firstItem="C7j-Aq-Cbn" firstAttribute="top" secondItem="cNv-U9-vM6" secondAttribute="top" id="mSR-vT-gbr"/>
+                            <constraint firstItem="zml-h9-9do" firstAttribute="top" secondItem="iYw-Dz-mun" secondAttribute="top" constant="169" id="per-fq-lWo"/>
+                            <constraint firstItem="iYw-Dz-mun" firstAttribute="bottom" secondItem="fI9-zf-jFZ" secondAttribute="bottom" constant="65" id="sKx-Ku-HAX"/>
+                            <constraint firstItem="pp8-SC-AWO" firstAttribute="bottom" secondItem="iYw-Dz-mun" secondAttribute="bottom" id="tsf-8J-7HN"/>
+                            <constraint firstItem="UC9-wu-6cR" firstAttribute="top" secondItem="iYw-Dz-mun" secondAttribute="top" constant="152" id="uLZ-IQ-Jqm"/>
+                            <constraint firstItem="fI9-zf-jFZ" firstAttribute="top" secondItem="zml-h9-9do" secondAttribute="bottom" constant="92" id="uyW-Sb-caD"/>
+                            <constraint firstItem="iYw-Dz-mun" firstAttribute="bottom" secondItem="UC9-wu-6cR" secondAttribute="bottom" constant="265" id="vhH-XV-uyN"/>
+                            <constraint firstItem="zml-h9-9do" firstAttribute="leading" secondItem="iYw-Dz-mun" secondAttribute="leading" constant="9" id="xVk-0u-1q2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iYw-Dz-mun"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="apple" id="Jil-bv-pvv"/>
+                    <connections>
+                        <outlet property="AddMoneyButton" destination="9MA-Gl-F2d" id="zMi-IR-VSF"/>
+                        <outlet property="CurrentMoney" destination="C7j-Aq-Cbn" id="jc5-np-x4R"/>
+                        <outlet property="button" destination="UC9-wu-6cR" id="Jtc-9k-pMB"/>
+                        <outlet property="picker" destination="zml-h9-9do" id="kBL-PS-EBG"/>
+                        <outlet property="winLabel" destination="fI9-zf-jFZ" id="6E2-UD-m5P"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RhO-FL-l9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="211.875" y="-9.5070422535211261"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pfI-ML-LcL">
+            <objects>
+                <tabBarController id="i8X-Cz-i64" customClass="ViewController" customModule="Slot_Machine" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Slr-GV-LDt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tXb-o6-1wy" kind="relationship" relationship="viewControllers" id="0SY-b4-cER"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iaW-yE-ydl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-869" y="-326"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RedButton (1)" width="100" height="100"/>
+        <image name="Slot Machine 2.0.png" width="960" height="720"/>
+        <image name="apple" width="52" height="46"/>
+        <image name="whiteButton" width="29" height="46"/>
+    </resources>
 </document>

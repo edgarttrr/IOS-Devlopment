@@ -10,8 +10,13 @@
 		FC3CCBEE204B4657004C2A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CCBED204B4657004C2A34 /* AppDelegate.swift */; };
 		FC3CCBF0204B4657004C2A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CCBEF204B4657004C2A34 /* ViewController.swift */; };
 		FC3CCBF3204B4657004C2A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3CCBF1204B4657004C2A34 /* Main.storyboard */; };
-		FC3CCBF5204B4657004C2A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3CCBF4204B4657004C2A34 /* Assets.xcassets */; };
 		FC3CCBF8204B4657004C2A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3CCBF6204B4657004C2A34 /* LaunchScreen.storyboard */; };
+		FC3CCC01204B47AD004C2A34 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC3CCBFF204B47AD004C2A34 /* crunch.wav */; };
+		FC3CCC02204B47AD004C2A34 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC3CCC00204B47AD004C2A34 /* win.wav */; };
+		FC3CCC04204B5275004C2A34 /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CCC03204B5275004C2A34 /* CustomPickerViewController.swift */; };
+		FC3CCC08204CD824004C2A34 /* Slot Machine drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3CCC07204CD824004C2A34 /* Slot Machine drawing.png */; };
+		FC3CCC0F204CDD8B004C2A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3CCC0E204CDD8B004C2A34 /* Assets.xcassets */; };
+		FC3CCC13204CDEA4004C2A34 /* Slot Machine 2.0.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3CCC12204CDEA4004C2A34 /* Slot Machine 2.0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +24,14 @@
 		FC3CCBED204B4657004C2A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3CCBEF204B4657004C2A34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC3CCBF2204B4657004C2A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC3CCBF4204B4657004C2A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3CCBF7204B4657004C2A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3CCBF9204B4657004C2A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3CCBFF204B47AD004C2A34 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		FC3CCC00204B47AD004C2A34 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		FC3CCC03204B5275004C2A34 /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		FC3CCC07204CD824004C2A34 /* Slot Machine drawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slot Machine drawing.png"; sourceTree = "<group>"; };
+		FC3CCC0E204CDD8B004C2A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
+		FC3CCC12204CDEA4004C2A34 /* Slot Machine 2.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slot Machine 2.0.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				FC3CCBED204B4657004C2A34 /* AppDelegate.swift */,
+				FC3CCC03204B5275004C2A34 /* CustomPickerViewController.swift */,
 				FC3CCBEF204B4657004C2A34 /* ViewController.swift */,
 				FC3CCBF1204B4657004C2A34 /* Main.storyboard */,
-				FC3CCBF4204B4657004C2A34 /* Assets.xcassets */,
+				FC3CCC0E204CDD8B004C2A34 /* Assets.xcassets */,
+				FC3CCC12204CDEA4004C2A34 /* Slot Machine 2.0.png */,
+				FC3CCC07204CD824004C2A34 /* Slot Machine drawing.png */,
+				FC3CCBFF204B47AD004C2A34 /* crunch.wav */,
+				FC3CCC00204B47AD004C2A34 /* win.wav */,
 				FC3CCBF6204B4657004C2A34 /* LaunchScreen.storyboard */,
 				FC3CCBF9204B4657004C2A34 /* Info.plist */,
 			);
@@ -124,7 +139,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3CCBF8204B4657004C2A34 /* LaunchScreen.storyboard in Resources */,
-				FC3CCBF5204B4657004C2A34 /* Assets.xcassets in Resources */,
+				FC3CCC01204B47AD004C2A34 /* crunch.wav in Resources */,
+				FC3CCC13204CDEA4004C2A34 /* Slot Machine 2.0.png in Resources */,
+				FC3CCC08204CD824004C2A34 /* Slot Machine drawing.png in Resources */,
+				FC3CCC02204B47AD004C2A34 /* win.wav in Resources */,
+				FC3CCC0F204CDD8B004C2A34 /* Assets.xcassets in Resources */,
 				FC3CCBF3204B4657004C2A34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3CCBF0204B4657004C2A34 /* ViewController.swift in Sources */,
+				FC3CCC04204B5275004C2A34 /* CustomPickerViewController.swift in Sources */,
 				FC3CCBEE204B4657004C2A34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
